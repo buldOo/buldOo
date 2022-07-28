@@ -10,22 +10,52 @@
     <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
+    <!-- Sidebar -->
     <div id="sidebar-menu">
         <ul>
-            <li class="sidebar-li active"><a href="#home-screen">Acceuil</a></li>
-            <li class="sidebar-li"><a href="#about-screen">À propos</a></li>
-            <li class="sidebar-li"><a href="#">Hobbies</a></li>
+            <li><a class="sidebar-li active" href="#home-screen">Acceuil</a></li>
+            <li><a class="sidebar-li" href="#about-screen">À propos</a></li>
+            <li><a class="sidebar-li" href="#hobbies-screen">Hobbies</a></li>
         </ul>
     </div>
+
+    <!-- Home -->
     <div id="home-screen" class="screen">
+        <div class="fixed-background"></div>
         <div id="centered-container">
             <h1>GAY Killian</h1>
             <p>Developpeur web.</p>
         </div>
     </div>
+
+    <!-- About -->
     <div id="about-screen" class="screen">
-        <h1>GAY Killian</h1>
-        <p>Developpeur web.</p>
+        <h1 class="ghost-text">À propos</h1>
+    </div>
+
+    <!-- Hobbies -->
+    <div class="screen">
+        <div id="hobbies-screen">
+            <h1 class="ghost-text">Hobbies</h1>
+            <div id="hobbies-grid">
+                <div class="grid-element">
+                    <div class="sports-icon"></div>
+                    <h1>Sport</h1>
+                </div>
+                <div class="grid-element">
+                    <div class="games-icon"></div>
+                    <h1>Jeux vidéo</h1>
+                </div>
+                <div class="grid-element">
+                    <div class="moutain-icon"></div>
+                    <h1>Nature</h1>
+                </div>
+                <div class="grid-element">
+                    <div class="tech-icon"></div>
+                    <h1>Technologie</h1>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

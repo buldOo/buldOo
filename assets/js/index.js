@@ -6,3 +6,8 @@ liList.forEach(element => element.addEventListener('click', function handleClick
     liList.forEach(element => element.classList.remove("active"));
     element.classList.add("active");
 }));
+
+// Force the sroll on reload
+window.addEventListener('load', (event) => {
+    window.scrollTo(0, 0);
+});
