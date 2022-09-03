@@ -98,10 +98,35 @@ p {
 /*
  * Real Hobbies
  */
- #test-screen {
+#test-screen {
     width: 40vw;
     height: 100vh;
     background: linear-gradient(37.5deg,#1d1e21 0,#3e4246 100%);
+}
+#test-screen h1{
+    height: 10vh;
+}
+#hobbies-grid {
+    width: 100%;
+    height: calc(90vh - 5vh); 
+    margin-top: 5vh;
+
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fill, minmax(100px, calc(50% - 2vh)));
+    grid-gap: 2vh;
+}
+.grid-element {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+.grid-element div {
+    height: 20%;
+}
+.grid-element h1 {
+    text-align: center;
 }
 
 /*
@@ -116,25 +141,6 @@ p {
     flex-direction: column;
     
     background: linear-gradient(135deg,#1d1e21 0%, #3e4246 100%);
-}
-#hobbies-grid {
-    width: 100%;
-    margin-top: 5vh;
-
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 20vw));
-    grid-gap: 1vw;
-}
-.grid-element {
-    height: 20vh;
-}
-.grid-element div {
-    height: 60%;
-}
-.grid-element h1 {
-    font-size: 100%;
-    text-align: center;
 }
 
 /*
