@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
+    <div class="fixed-background"></div>
+    
     <!-- Sidebar -->
     <div id="sidebar-menu">
         <ul>
             <li><a class="sidebar-li active" href="#home-screen">Acceuil</a></li>
             <li><a class="sidebar-li" href="#about-screen">À propos</a></li>
+            <li><a class="sidebar-li" href="#test-screen">Test</a></li>
             <li><a class="sidebar-li" href="#hobbies-screen">Hobbies</a></li>
         </ul>
     </div>
 
-    <!-- Home -->
+    <!-- Home --> 
     <div id="home-screen" class="screen">
-        <div class="fixed-background"></div>
         <div id="centered-container">
             <h1>GAY Killian</h1>
             <p>Developpeur web.</p>
@@ -31,32 +33,91 @@
     <!-- About -->
     <div id="about-screen" class="screen">
         <h1 class="ghost-text">À propos</h1>
-    </div>
-
-    <!-- Hobbies -->
-    <div class="screen">
-        <div id="hobbies-screen">
-            <h1 class="ghost-text">Hobbies</h1>
-            <div id="hobbies-grid">
-                <div class="grid-element">
-                    <div class="sports-icon"></div>
-                    <h1>Sport</h1>
+        <div id="about-screen-container" class="screen-container">
+            <div class="upper-right-corner"></div>
+            <div class="bottom-left-corner"></div>
+            <div>
+                <h1>Description</h1>
+                <p>
+                    Passionné de technologie depuis mon plus jeune âge, 
+                    j'adore apprendre de nouvelles choses et je suis motivé pour relever de nouveaux challenges et développer mes compétences. 
+                    Je m'épanouie particulièrement dans le développement front-end.
+                    Je suis très alaise en ce qui concerne le travail d'équipe, et j'ai une réel envie de contribution.
+                </p>
+            </div>
+            <div>
+                <h1>Compétences</h1>
+                <div class="skillbox">
+                    <div class="skill-text">
+                        <p>HTML/CSS</p>
+                        <p>100%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill_level" style="width: 100%"></div>
+                    </div>
                 </div>
-                <div class="grid-element">
-                    <div class="games-icon"></div>
-                    <h1>Jeux vidéo</h1>
+            
+                <div class="skillbox">
+                    <div class="skill-text">
+                        <p>Javascript</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill_level" style="width: 80%"></div>
+                    </div>
                 </div>
-                <div class="grid-element">
-                    <div class="moutain-icon"></div>
-                    <h1>Nature</h1>
+            
+                <div class="skillbox">
+                    <div class="skill-text">
+                        <p>PHP</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill_level" style="width: 80%"></div>
+                    </div>
                 </div>
-                <div class="grid-element">
-                    <div class="tech-icon"></div>
-                    <h1>Technologie</h1>
+            
+                <div class="skillbox">
+                    <div class="skill-text">
+                        <p>Wordpress</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill_level" style="width: 60%"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Hobbies -->
+    <div id="test-screen" class="screen">
+
+    </div>
+
+    <!-- Hobbies -->
+    <div id="hobbies-screen" class="screen">
+        <h1 class="ghost-text">Hobbies</h1>
+        <div id="hobbies-grid">
+            <div class="grid-element">
+                <div class="sports-icon"></div>
+                <h1>Sport</h1>
+            </div>
+            <div class="grid-element">
+                <div class="games-icon"></div>
+                <h1>Jeux vidéo</h1>
+            </div>
+            <div class="grid-element">
+                <div class="moutain-icon"></div>
+                <h1>Nature</h1>
+            </div>
+            <div class="grid-element">
+                <div class="tech-icon"></div>
+                <h1>Technologie</h1>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
-<script src="assets/js/index.js"></script>
+<script src="assets/js/index.js"></script> 

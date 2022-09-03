@@ -4,16 +4,20 @@
 * {
     margin: 0;
     padding: 0;
-    max-width: 100vw;
-
     overflow: hidden;
     scroll-behavior: smooth;
     text-decoration: none;
     list-style-type: none;
     overflow-wrap: break-word;
-
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+}
+h1 {
+    font-size: 2vw;
+}
+p {
+    font-size: 1vw;
 }
 
 /*
@@ -22,9 +26,8 @@
 .screen {
     padding-left: 7vw;
 }
-
 #home-screen {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 .fixed-background {
@@ -56,15 +59,57 @@
     font-size: 1.5vw;
 }
 
+/*
+ * About
+ */
 #about-screen {
-    width: 40%;
+    width: 40vw;
     height: 100vh;
     background: linear-gradient(135deg,#1d1e21 0,#3e4246 100%);
 }
 
-#hobbies-screen {
+#about-screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.skillbox{
+    box-sizing: border-box;
     width: 100%;
+    margin: 20px 0;
+}
+.skill-text{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-bar{
+    background: #282828;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid aquamarine;
+    border-radius: 2px;
+}
+.skill_level{
+    background: aquamarine;
+    width: 100%;
+    height: 10px;
+}
+
+/*
+ * Real Hobbies
+ */
+ #test-screen {
+    width: 40vw;
+    height: 100vh;
+    background: linear-gradient(37.5deg,#1d1e21 0,#3e4246 100%);
+}
+
+/*
+ * Hobbies
+ */
+#hobbies-screen {
     height: 70vh;
+    width: 100%;
     margin-top: 30vh;
 
     display: flex;
@@ -96,14 +141,12 @@
  * Sidebar 
  */
 #sidebar-menu {
-    width: 5vw;
+    width: 7vw;
     height: 100vh;
-    padding: 0 1vw;
-
     position: fixed;
     z-index: 999;
-    
     background-color: #181818;
+    white-space: nowrap;
     color: #fff;
 }
 #sidebar-menu ul {
@@ -111,8 +154,9 @@
     height: 100%;
 }
 #sidebar-menu ul > li {
-    width: 100%;
+    width: min-content;
     height: 5%;
+    margin: auto;
 
     display: flex;
     flex-direction: column;
@@ -130,11 +174,9 @@
     font-weight: bold;
     opacity: .5;
 }
-
 .active {
     color: aquamarine;
 }
-
 .ghost-text {
     margin-left: 4vw;
     font-size: 4vw;
@@ -147,8 +189,41 @@
     opacity: .2;
 }
 
+h1.ghost-text {
+    width: max-content;
+}
+
+.upper-right-corner {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 0;
+    right: 0;
+
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.bottom-left-corner {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    bottom: 0;
+    left: 0;
+
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.screen-container {
+    position: relative;
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    padding: 5%;
+}
+
 /*
- * Medoa
+ * Media
  */
 @media screen and (min-width: 445px) {
     #hobbies-screen {
@@ -172,3 +247,5 @@
 .tech-icon {
     background: url('https://api.iconify.design/clarity/internet-of-things-line.svg?color=white') no-repeat center center / contain;
 }
+.recycle-icon {
+    background: url('https://api.iconify.design/bi/arrow-clockwise.svg?color=white') no-repeat center center / contain;}
