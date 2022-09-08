@@ -1,6 +1,6 @@
 // Force the sroll on reload
 window.addEventListener('load', (event) => {
-   // window.scrollTo(0, 0);
+   window.scrollTo(0, 0);
 });
 
 // Get all the sidebar Li
