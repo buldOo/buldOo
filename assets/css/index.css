@@ -96,14 +96,14 @@ p {
 }
 
 /*
- * Real Hobbies
+ * Hobbies
  */
-#test-screen {
+#hobbies-screen {
     width: 40vw;
     height: 100vh;
     background: linear-gradient(37.5deg,#1d1e21 0,#3e4246 100%);
 }
-#test-screen h1{
+#hobbies-screen h1{
     height: 10vh;
 }
 #hobbies-grid {
@@ -117,10 +117,12 @@ p {
     grid-gap: 2vh;
 }
 .grid-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: auto;
     height: 100%;
     width: 100%;
-    background-color: red;
 }
 .grid-element div {
     height: 20%;
@@ -130,17 +132,44 @@ p {
 }
 
 /*
- * Hobbies
+ * Contact
  */
-#hobbies-screen {
-    height: 70vh;
+#contact-screen {
+    height: 40vh;
     width: 100%;
-    margin-top: 30vh;
+    margin-top: 60vh;
 
     display: flex;
     flex-direction: column;
     
     background: linear-gradient(135deg,#1d1e21 0%, #3e4246 100%);
+}
+
+#contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4vh 0 0 4vw;
+    position: relative;
+    width: 60%;
+}
+
+#contact-container a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+#contact-container h1{
+    margin-left: 1vw;
+    margin-top: auto;
+    White-space: nowrap;
+}
+
+#contact-container a > div {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    background-color: transparent;
 }
 
 /*
@@ -229,16 +258,6 @@ h1.ghost-text {
 }
 
 /*
- * Media
- */
-@media screen and (min-width: 445px) {
-    #hobbies-screen {
-        height: 40vh;
-        margin-top: 60vh;
-    }
-}
-
-/*
  * Icon
  */
 .sports-icon {
@@ -254,4 +273,17 @@ h1.ghost-text {
     background: url('https://api.iconify.design/clarity/internet-of-things-line.svg?color=white') no-repeat center center / contain;
 }
 .recycle-icon {
-    background: url('https://api.iconify.design/bi/arrow-clockwise.svg?color=white') no-repeat center center / contain;}
+    background: url('https://api.iconify.design/bi/arrow-clockwise.svg?color=white') no-repeat center center / contain;
+}
+.github-icon {
+    background: url('https://api.iconify.design/akar-icons/github-fill.svg?color=white') no-repeat center center / contain;
+}
+.linkedin-icon {
+    background: url('https://api.iconify.design/akar-icons/linkedin-box-fill.svg?color=white') no-repeat center center / contain;
+}
+.mail-icon {
+    background: url('https://api.iconify.design/charm/mail.svg?color=white') no-repeat center center / contain;
+}
+.phone-icon {
+    background: url('https://api.iconify.design/carbon/phone-filled.svg?color=white') no-repeat center center / contain;
+}
